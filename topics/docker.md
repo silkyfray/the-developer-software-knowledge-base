@@ -25,3 +25,9 @@ Restart the list of services. Note: build beforehand in order to pick up ENV var
 ```bash
 docker-compose restart <list of services>
 ```
+
+Execute a script inside a docker container
+
+```bash
+docker-compose exec <service name> bash /path/to/file
+```
