@@ -2,7 +2,7 @@
 
 This is a curated list of useful knowledge tidbits and commands compiled over the years 👨‍🎓 I figured it is best to put them in a repo where I and other folk will find them useful 🕵️‍♀️ Often times I find myself with an ever expanding unsaved text file in Sublime which I inevitably close accidentally.
 
-The content topics are divided by languages, tools and frameworks. Each topic is divided into basic concepts, best practices and commonly used commands.
+The content topics are divided by languages, tools and frameworks. Each topic is divided into basic concepts, best practices and commonly used commands. Languages also contain the tools commonly associated with the particular language.
 
 ## Topics
 
@@ -13,6 +13,8 @@ The content topics are divided by languages, tools and frameworks. Each topic is
 #### [Python](./topics/python.md)
 
 ### Tools
+
+#### [Useful terminal commands](./topics/bash.md)
 
 #### [Docker](./topics/python.md)
 
