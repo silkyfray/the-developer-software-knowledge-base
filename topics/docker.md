@@ -4,6 +4,12 @@
 
 Docker Compose is a tool for running multi-container setup.
 
+### FAQ
+
+#### What is the difference between ENTRYPOINT and CMD?
+
+https://www.ctl.io/developers/blog/post/dockerfile-entrypoint-vs-cmd/
+
 #### Commands
 
 Builds the list of services and starts them as daemon
