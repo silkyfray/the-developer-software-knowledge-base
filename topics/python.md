@@ -6,11 +6,50 @@
 
 ### Poetry
 
--
+A dependency management system like `pip`.
+
+#### Initialise a new project interactively
+
+```
+poetry init
+```
+
+##### Install packages
+
+```
+poetry install
+```
+
+#### Create a new shell within the project
+
+https://python-poetry.org/docs/basic-usage/#activating-the-virtual-environment
+
+```
+poetry shell
+```
+
+#### How to update the lock file after conflicts without updating the package versions
+
+````
+poetry lock --no-update
 
 ### Pyenv
+Manages python versions. Let's you switch  the global python version. It's like `nvm` for nodejs.
 
--
+```
+pyenv install 3.9.7 # install specific version
+pyenv global 3.9.7 # use version globally
+pyenv local 3.97 # use version locally. Also creates a local .python-version file
+```
+
+#### How to activate a virtual environment after it's been created?
+```
+source ~/.pyenv/versions/<python-version>/envs/<env-name>/bin/activate
+```
+
+#### What is the difference between the python virtual environment tools?
+https://stackoverflow.com/a/41573588/1709981
+https://nickolaskraus.org/articles/isolating-python-environments-with-pyenv-virtualenv-and-virtualenvwrapper/
 
 ### MyPy
 
@@ -38,7 +77,7 @@ INFO:root:send email result: <emails.backend.SMTPResponse status_code=250 status
 INFO:root:send email result: <emails.backend.SMTPResponse status_code=250 status_text=b'OK queued as 759af8e3-4c7d-4071-8117-21a8a0813711'>
 INFO:celery.app.trace:Task app.core.celery_app.send_emails[8734ef99-277b-46e0-a5d9-f11acbdbd742] succeeded in 0.8479202999733388s: None
 <EagerResult: 8734ef99-277b-46e0-a5d9-f11acbdbd742>
-```
+````
 
 ### Alembic
 
@@ -54,3 +93,15 @@ alembic revision --autogenerate -m "add organization"
 ### Pytest
 
 Pytest is Python's premier testing tool
+
+### Playwright
+
+A python library to automate browser testing. Like cypress.
+
+#### How to debug?
+
+https://playwright.dev/python/docs/debug
+
+#### How to select text input?
+
+https://playwright.dev/python/docs/input/#text-input
